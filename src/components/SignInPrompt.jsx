@@ -1,4 +1,3 @@
-// src/components/SignInPrompt.jsx
 import { Button } from 'react-bootstrap';
 import { SignInButton } from '@clerk/clerk-react';
 

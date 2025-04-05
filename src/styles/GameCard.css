@@ -1,8 +1,8 @@
-/* Standardize card height */
+
 .game-card {
     width: 100%;
-    max-width: 300px; /* slightly smaller card */
-    height: 500px;     /* fixed height for uniformity */
+    max-width: 300px; 
+    height: 500px;     
     display: flex;
     flex-direction: column;
   }
@@ -28,10 +28,10 @@
     bottom: 0;
     pointer-events: none;
     z-index: 0;
-    box-shadow: 0 0 12px var(--primary, #6c5ce7); /* apply glow */
+    box-shadow: 0 0 12px var(--primary, #6c5ce7); 
   }
   
-  /* Remove glow if it's a video */
+  
   .card-media-container iframe + .card-media-glow {
     display: none;
   }

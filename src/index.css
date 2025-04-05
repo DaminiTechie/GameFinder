@@ -21,8 +21,8 @@ body {
 .container {
   padding-top: 20px;
 }
-/* Add to your global CSS */
-/* Glowing text effect */
+
+
 .neon-text {
   text-shadow: 
     0 0 5px #6C5CE7,
@@ -30,7 +30,7 @@ body {
     0 0 20px #00CEFF;
 }
 
-/* Button glow */
+
 .glow-button {
   position: relative;
   overflow: hidden;

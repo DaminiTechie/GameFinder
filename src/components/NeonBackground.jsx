@@ -1,4 +1,3 @@
-// src/components/NeonBackground.jsx
 import '../styles/NeonBackground.css';
 
 export default function NeonBackground() {

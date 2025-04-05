@@ -32,7 +32,7 @@ const GameCard = ({ game }) => {
 
   return (
     <Card className="game-card neon-card shadow-sm mb-4">
-      {/* Video or Image */}
+   
       <div className="position-relative card-media-container" onClick={() => setShowVideo(!showVideo)}>
         {showVideo && game.clip ? (
           <iframe
@@ -60,7 +60,7 @@ const GameCard = ({ game }) => {
         <div className="card-media-glow" />
       </div>
 
-      {/* Card Body */}
+   
       <Card.Body className="card-body-neon">
         <Stack direction="horizontal" className="justify-content-between mb-3">
           <div className="d-flex gap-2">
@@ -95,7 +95,7 @@ const GameCard = ({ game }) => {
           </div>
         </Stack>
 
-        {/* Action Buttons */}
+        
         <div className="d-flex justify-content-between button-row">
           <Button as={Link} to={`/game/${game.id}`} className="details-button glow-button" size="sm">
             Details
@@ -110,7 +110,7 @@ const GameCard = ({ game }) => {
           </Button>
         </div>
 
-        {/* Extra Section */}
+        
         {expanded && (
           <div className="expanded-section">
             <h6 className="neon-heading">Similar Games</h6>
@@ -119,7 +119,7 @@ const GameCard = ({ game }) => {
         )}
       </Card.Body>
 
-      {/* Footer Favorite Button */}
+   
       <Card.Footer className="card-footer-neon">
         <SignedIn>
           <Button

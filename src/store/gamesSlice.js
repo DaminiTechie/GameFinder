@@ -1,4 +1,3 @@
-// src/store/gamesSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
 const gamesSlice = createSlice({

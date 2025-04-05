@@ -1,7 +1,6 @@
-// src/store/favoritesSlice.js
 import { createSlice } from '@reduxjs/toolkit';
 
-// Load favorites from localStorage
+
 const loadFavorites = () => {
   try {
     const stored = localStorage.getItem('favorites');

@@ -28,7 +28,6 @@ const Library = () => {
     }
   };
 
-  // Sorting logic
   const sortedGames = useMemo(() => {
     return [...libraryGames].sort((a, b) => {
       if (sortBy === 'name') return a.name.localeCompare(b.name);
@@ -39,7 +38,7 @@ const Library = () => {
 
   return (
     <Container className="py-4">
-      {/* Signed-In Content */}
+   
       <SignedIn>
         <div className="d-flex justify-content-between align-items-center mb-4">
           <h1>My Game Library</h1>
@@ -59,7 +58,7 @@ const Library = () => {
           </Alert>
         ) : (
           <>
-            {/* Sorting Dropdown */}
+        
             <div className="mb-3">
               <Form.Select 
                 value={sortBy} 
@@ -72,7 +71,7 @@ const Library = () => {
               </Form.Select>
             </div>
 
-            {/* Display Sorted Games */}
+     
             <Row xs={1} sm={2} md={3} lg={4} className="g-4">
               {sortedGames.map(game => (
                 <Col key={game.id}>
@@ -84,7 +83,7 @@ const Library = () => {
         )}
       </SignedIn>
 
-      {/* Signed-Out Message */}
+     
       <SignedOut>
         <Alert variant="warning" className="mt-4 text-center">
           <h4>Sign in to access your game library</h4>

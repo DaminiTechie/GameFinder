@@ -1,4 +1,3 @@
-// src/components/Filters.jsx
 import { useEffect, useState } from "react";
 import { Form, Button, Alert } from "react-bootstrap";
 import axios from "axios";
@@ -15,7 +14,7 @@ function Filters({ onFilterChange }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  // Fetch genres on mount
+
   useEffect(() => {
     const fetchGenres = async () => {
       try {
@@ -35,7 +34,7 @@ function Filters({ onFilterChange }) {
   }, []);
 
   const handleApplyFilters = () => {
-    console.log("Applying filters:", filters); // Debug log
+    console.log("Applying filters:", filters); 
     onFilterChange(filters);
   };
 

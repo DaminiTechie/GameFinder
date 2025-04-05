@@ -5,7 +5,7 @@ import Filters from "../components/Filters";
 import NavBar from "../components/Navbar";
 import GameCard from "../components/GameCard";
 import axios from "axios";
-import "../styles/Home.css"; // Your custom styles
+import "../styles/Home.css"; 
 
 const API_KEY = "dbb047ced4114becacf6ba4e979d120c";
 const platformIcons = ["🎮", "🕹️", "👾", "🎯", "🧩", "🖥️"];
@@ -24,7 +24,7 @@ function Home() {
   const [error, setError] = useState(null);
   const [randomPlatformIcon, setRandomPlatformIcon] = useState("🎮");
 
-  // Change platform icon every 3 seconds
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setRandomPlatformIcon(
@@ -34,7 +34,7 @@ function Home() {
     return () => clearInterval(interval);
   }, []);
 
-  // Fetch games
+ 
   useEffect(() => {
     let isMounted = true;
 
@@ -87,7 +87,7 @@ function Home() {
     <Container fluid className="home-container">
       <NavBar onSearch={setSearchQuery} />
 
-      {/* Hero Section */}
+    
       {!searchQuery && !filters.genre && !filters.year && (
         <motion.div
           className="hero-section text-center py-5 mb-4"
@@ -111,7 +111,7 @@ function Home() {
         </motion.div>
       )}
 
-      {/* Section Header */}
+     
       <motion.div
         key={`header-${searchQuery}-${filters.genre}-${filters.year}`}
         initial={{ opacity: 0 }}
@@ -137,7 +137,7 @@ function Home() {
         )}
       </motion.div>
 
-      {/* Content Section */}
+      
       <Row>
         <Col md={3}>
           <motion.div
@@ -150,7 +150,7 @@ function Home() {
         </Col>
 
         <Col md={9}>
-          {/* Loading */}
+     
           {loading && (
             <motion.div
               className="loading-state text-center py-5"
@@ -162,7 +162,7 @@ function Home() {
             </motion.div>
           )}
 
-          {/* Error */}
+          
           {error && (
             <motion.div
               className="error-state"
@@ -179,7 +179,7 @@ function Home() {
             </motion.div>
           )}
 
-          {/* Game Grid */}
+        
           {!loading && !error && (
             <>
               <AnimatePresence>
@@ -224,7 +224,7 @@ function Home() {
                 </Row>
               </AnimatePresence>
 
-              {/* Pagination */}
+            
               {games.length > 0 && (
                 <motion.div
                   className="pagination-controls text-center mt-4"

@@ -77,7 +77,7 @@ function Navbar() {
       expand="lg"
       className="px-4 py-3 position-sticky top-0 z-3 navbar-custom"
     >
-      {/* Animated Logo */}
+     
       <motion.div
         initial="hidden"
         animate={["visible", "shake"]}
@@ -91,7 +91,7 @@ function Navbar() {
         </BootstrapNavbar.Brand>
       </motion.div>
 
-      {/* Center - Search Bar */}
+     
       <div className="flex-grow-1 mx-4 position-relative">
         <Form onSubmit={handleSearch}>
           <InputGroup className="custom-search-bar">
@@ -116,7 +116,7 @@ function Navbar() {
           </InputGroup>
         </Form>
 
-        {/* Suggestions */}
+    
         {showSuggestions && suggestions.length > 0 && (
           <div className="suggestions-dropdown">
             {suggestions.map(game => (
@@ -148,7 +148,7 @@ function Navbar() {
         )}
       </div>
 
-      {/* Right Side - Auth */}
+     
       <div className="d-flex align-items-center gap-2">
         <SignedIn>
           <Button variant="link" className="text-white me-2" onClick={() => navigate('/library')}>

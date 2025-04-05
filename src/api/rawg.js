@@ -2,7 +2,7 @@ import axios from 'axios';
 
 const API_KEY = '35be580b79494f36bf863e691f74d3bb';
 
-// Function to fetch list of games
+
 export const fetchGames = async (params = {}) => {
   try {
     const response = await axios.get('https://api.rawg.io/api/games', {
@@ -20,7 +20,7 @@ export const fetchGames = async (params = {}) => {
   }
 };
 
-// Function to fetch details for a specific game
+
 export const fetchGameDetails = async (id) => {
   try {
     const response = await axios.get(`https://api.rawg.io/api/games/${id}`, {
@@ -36,7 +36,7 @@ export const fetchGameDetails = async (id) => {
   }
 };
 
-// Function to fetch game screenshots
+
 export const fetchGameScreenshots = async (id) => {
   try {
     const response = await axios.get(`https://api.rawg.io/api/games/${id}/screenshots`, {

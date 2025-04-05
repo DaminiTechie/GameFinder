@@ -1,4 +1,3 @@
-// src/components/ProtectedRoute.jsx
 import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 
 const ProtectedRoute = ({ children }) => {

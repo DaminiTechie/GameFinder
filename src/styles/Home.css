@@ -1,11 +1,11 @@
-/* Home.css */
+
 .home-container {
     background: radial-gradient(ellipse at bottom, #0f0f12 0%, #1a1a23 100%);
     min-height: 100vh;
     color: white;
   }
   
-  /* Hero Section */
+
   .hero-section {
     background: linear-gradient(135deg, rgba(108, 92, 231, 0.1) 0%, rgba(0, 206, 255, 0.05) 100%);
     border-radius: 16px;
@@ -42,7 +42,7 @@
     color: transparent;
   }
   
-  /* Section Header */
+  
   .section-header {
     margin: 2rem 0;
     padding: 0 1rem;
@@ -75,7 +75,7 @@
     font-size: 0.9rem;
   }
   
-  /* Loading State */
+  
   .loading-state {
     display: flex;
     flex-direction: column;
@@ -90,7 +90,7 @@
     height: 4rem;
   }
   
-  /* Error State */
+
   .error-state {
     max-width: 600px;
     margin: 2rem auto;
@@ -101,7 +101,7 @@
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
   }
   
-  /* No Results */
+ 
   .no-results {
     display: flex;
     justify-content: center;
@@ -114,7 +114,7 @@
     max-width: 400px;
   }
   
-  /* Pagination */
+
   .pagination-controls {
     margin: 3rem 0;
   }
@@ -138,13 +138,13 @@
     margin: 0 1rem;
   }
   
-  /* Animations */
+
   @keyframes float {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-10px); }
   }
   
-  /* Responsive */
+
   @media (max-width: 768px) {
     .hero-title {
       font-size: 2.5rem;

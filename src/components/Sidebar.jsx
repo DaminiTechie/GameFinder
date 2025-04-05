@@ -10,7 +10,7 @@ function Sidebar({ filters, setFilters }) {
     <div className="sidebar bg-dark p-3 text-white">
       <h4>Filters</h4>
       <Form>
-        {/* Category Filter */}
+     
         <Form.Group>
           <Form.Label>Category</Form.Label>
           <Form.Select name="category" onChange={handleFilterChange}>
@@ -21,7 +21,7 @@ function Sidebar({ filters, setFilters }) {
           </Form.Select>
         </Form.Group>
 
-        {/* Release Year Filter */}
+        
         <Form.Group className="mt-2">
           <Form.Label>Release Year</Form.Label>
           <Form.Control
@@ -32,7 +32,7 @@ function Sidebar({ filters, setFilters }) {
           />
         </Form.Group>
 
-        {/* Popularity Filter */}
+     
         <Form.Group className="mt-2">
           <Form.Label>Popularity</Form.Label>
           <Form.Select name="popularity" onChange={handleFilterChange}>

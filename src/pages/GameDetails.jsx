@@ -16,7 +16,7 @@ function GameDetails() {
         setLoading(true);
         setError(null);
         
-        // Fetch game details and screenshots simultaneously
+     
         const [details, screenshots] = await Promise.all([
           fetchGameDetails(id),
           fetchGameScreenshots(id)

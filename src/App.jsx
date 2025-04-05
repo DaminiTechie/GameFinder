@@ -19,11 +19,11 @@ function App() {
       <main className="container py-4" style={{ position: "relative", zIndex: 2 }}>
         <ErrorBoundary>
           <Routes>
-            {/* Public Routes */}
+       
             <Route path="/" element={<Home />} />
             <Route path="/game/:id" element={<GameDetails />} />
 
-            {/* Protected Library Route */}
+
             <Route
               path="/library"
               element={
