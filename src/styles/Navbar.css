@@ -1,0 +1,183 @@
+/* Theme Variables */
+:root {
+  --primary: #6c5ce7;
+  --accent: #00cec9;
+}
+
+/* Navbar Background & Position */
+.navbar-custom {
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 1050;
+}
+
+/* Brand/Logo Styling */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.02);
+}
+
+/* Animated underline on hover */
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+  transform: scaleX(1);
+}
+
+/* Gradient text for brand name */
+.brand-gradient {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.25rem;
+}
+
+/* Glowing gamepad icon */
+.text-glow {
+  color: white;
+  filter: drop-shadow(0 0 4px #9b59b6);
+  transition: filter 0.3s ease;
+}
+
+.navbar-brand:hover .text-glow {
+  filter: drop-shadow(0 0 8px #e056fd);
+}
+
+/* Search Bar Container */
+.custom-search-bar {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+/* Search Icon Styling */
+.search-icon {
+  position: absolute;
+  left: 14px;
+  color: white;
+  font-size: 16px;
+  pointer-events: none;
+  transition: color 0.3s ease;
+  z-index: 1;
+}
+
+/* Search Input Field */
+.custom-search-input {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  border: none;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  font-size: 14px;
+  z-index: 2;
+}
+
+.custom-search-input:focus {
+  background-color: white;
+  color: black;
+  outline: none;
+}
+
+/* Hover & Focus Styles */
+.custom-search-bar:hover,
+.custom-search-input:focus {
+  border: 1px solid white;
+}
+
+.custom-search-bar:hover .search-icon,
+.custom-search-input:focus ~ .search-icon {
+  color: black;
+}
+
+/* Suggestions Dropdown */
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.suggestion-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  border-radius: 10px;
+  transition: background-color 0.25s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Glowing buttons */
+.glow-button {
+  border-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.glow-button:hover {
+  box-shadow: 0 0 15px #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Signup Button Enhancement */
+.btn-primary {
+  background-color: var(--primary);
+  border: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-search-bar {
+    max-width: 100%;
+  }
+
+  .navbar-custom {
+    padding: 10px 20px;
+  }
+}

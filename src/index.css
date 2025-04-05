@@ -1,0 +1,66 @@
+body {
+  background-color: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.game-card {
+  border: 1px solid #333;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  background-color: #222;
+  color: white;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 20px;
+}
+/* Add to your global CSS */
+/* Glowing text effect */
+.neon-text {
+  text-shadow: 
+    0 0 5px #6C5CE7,
+    0 0 10px #6C5CE7,
+    0 0 20px #00CEFF;
+}
+
+/* Button glow */
+.glow-button {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.glow-button:hover {
+  box-shadow: 
+    0 0 10px #6C5CE7,
+    0 0 20px rgba(108, 92, 231, 0.5);
+}
+
+.glow-button::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to bottom right,
+    transparent 45%,
+    rgba(0, 206, 255, 0.3) 50%,
+    transparent 55%
+  );
+  transform: rotate(30deg);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) rotate(30deg); }
+  100% { transform: translateX(100%) rotate(30deg); }
+}
