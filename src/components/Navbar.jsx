@@ -5,8 +5,6 @@ import {
   Button,
   Offcanvas,
   Container,
-  Nav,
-  Dropdown,
 } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaSearch, FaGamepad, FaBars } from 'react-icons/fa';
@@ -22,7 +20,6 @@ import axios from 'axios';
 import '../styles/Navbar.css';
 
 const API_KEY = 'dbb047ced4114becacf6ba4e979d120c';
-
 
 function Navbar() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -71,21 +68,23 @@ function Navbar() {
       className="px-3 py-2 position-sticky top-0 z-3 navbar-custom"
     >
       <Container fluid>
-       
         <div className="d-none d-lg-flex w-100 align-items-center justify-content-between">
-        
           <motion.div
             initial={{ y: -20 }}
             animate={{ y: 0 }}
             transition={{ type: 'spring', stiffness: 300 }}
           >
-            <BootstrapNavbar.Brand as={Link} to="/" className="me-4 neon-logo d-flex align-items-center">
+            <BootstrapNavbar.Brand
+              as={Link}
+              to="/"
+              className="me-4 neon-logo d-flex align-items-center"
+            >
               <FaGamepad className="text-glow me-2 fs-4" />
               <span className="brand-gradient fw-bold fs-4">GameFinder</span>
             </BootstrapNavbar.Brand>
           </motion.div>
 
-          
+          {/* Search bar */}
           <div className="flex-grow-1 mx-4 position-relative" style={{ maxWidth: '700px' }}>
             <Form onSubmit={handleSearch}>
               <div className="search-wrapper">
@@ -103,6 +102,8 @@ function Navbar() {
                 </div>
               </div>
             </Form>
+
+            {/* Simple Suggestions */}
             {showSuggestions && suggestions.length > 0 && (
               <div className="suggestions-dropdown">
                 {suggestions.map((game) => (
@@ -134,7 +135,6 @@ function Navbar() {
             )}
           </div>
 
-         
           <div className="d-flex align-items-center gap-3">
             <SignedIn>
               <Button variant="neon" onClick={() => navigate('/library')}>
@@ -146,15 +146,14 @@ function Navbar() {
               <SignInButton mode="modal">
                 <Button variant="neon-outline">Login</Button>
               </SignInButton>
-             <SignUpButton mode="modal">
-  <Button variant="neon-outline" block className="text-white">Sign Up</Button>
-</SignUpButton>
-
+              <SignUpButton mode="modal">
+                <Button variant="neon-outline" className="text-white">Sign Up</Button>
+              </SignUpButton>
             </SignedOut>
           </div>
         </div>
 
-        
+        {/* Mobile Navbar */}
         <div className="d-lg-none d-flex w-100 align-items-center justify-content-between">
           <BootstrapNavbar.Brand as={Link} to="/" className="me-2 neon-logo">
             <FaGamepad className="text-glow fs-4" />
@@ -184,12 +183,11 @@ function Navbar() {
           </Button>
         </div>
 
-      
+        {/* Offcanvas for Mobile */}
         <Offcanvas show={showMenu} onHide={() => setShowMenu(false)} placement="end">
-        <Offcanvas.Header closeButton className="neon-border" closeVariant="black">
-  <Offcanvas.Title className="brand-gradient">Menu</Offcanvas.Title>
-</Offcanvas.Header>
-
+          <Offcanvas.Header closeButton className="neon-border" closeVariant="black">
+            <Offcanvas.Title className="brand-gradient">Menu</Offcanvas.Title>
+          </Offcanvas.Header>
           <Offcanvas.Body className="d-flex flex-column gap-3 neon-bg">
             <SignedIn>
               <Button variant="neon" onClick={() => navigate('/library')}>
@@ -215,6 +213,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
-

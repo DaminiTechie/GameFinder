@@ -56,3 +56,42 @@
   background-color: #001f3f;
   color: #00aaff;
 }
+.suggestions-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 350px;
+  overflow-y: auto;
+  background-color: #1f1f1f;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.suggestion-item {
+  padding: 8px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: background 0.2s;
+}
+
+.suggestion-item:hover {
+  background-color: #333;
+  border-radius: 8px;
+}
+
+.suggestion-title {
+  font-weight: bold;
+}
+
+.suggestion-meta {
+  font-size: 0.8rem;
+  color: #aaa;
+}
+
+
+
+
