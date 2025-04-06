@@ -2,7 +2,7 @@
 
 A responsive web application for discovering and exploring video games using the RAWG API.
 
-
+🚀 **Live Demo**: (https://game-finder-mu.vercel.app/)
 
 ## 🚀 Features
 
@@ -26,7 +26,7 @@ A responsive web application for discovering and exploring video games using the
 
 ### Prerequisites
 
-- RAWG API key (free tier available)
+- RAWG API key 
 
 ### Setup Steps
 1. Clone repository:
@@ -39,7 +39,7 @@ A responsive web application for discovering and exploring video games using the
     npm install
 
 3. Create .env file:
-    VITE_RAWG_API_KEY=your_api_key_here
+    VITE_RAWG_API_KEY=dbb047ced4114becacf6ba4e979d120c
 
 
 4. Start development server:
