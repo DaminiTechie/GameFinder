@@ -2,7 +2,7 @@
 
 A responsive web application for discovering and exploring video games using the RAWG API.
 
-🚀 **Live Demo**:https://game-finder-qst5.vercel.app/
+🚀 **Live Demo**:https://game-finder-rsq6.vercel.app/
 
 ## 🚀 Features
 
