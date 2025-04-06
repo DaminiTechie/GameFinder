@@ -84,7 +84,6 @@ function Navbar() {
             </BootstrapNavbar.Brand>
           </motion.div>
 
-          {/* Search bar */}
           <div className="flex-grow-1 mx-4 position-relative" style={{ maxWidth: '700px' }}>
             <Form onSubmit={handleSearch}>
               <div className="search-wrapper">
@@ -103,7 +102,7 @@ function Navbar() {
               </div>
             </Form>
 
-            {/* Simple Suggestions */}
+  
             {showSuggestions && suggestions.length > 0 && (
               <div className="suggestions-dropdown">
                 {suggestions.map((game) => (
@@ -153,7 +152,7 @@ function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Navbar */}
+
         <div className="d-lg-none d-flex w-100 align-items-center justify-content-between">
           <BootstrapNavbar.Brand as={Link} to="/" className="me-2 neon-logo">
             <FaGamepad className="text-glow fs-4" />
@@ -183,7 +182,6 @@ function Navbar() {
           </Button>
         </div>
 
-        {/* Offcanvas for Mobile */}
         <Offcanvas show={showMenu} onHide={() => setShowMenu(false)} placement="end">
           <Offcanvas.Header closeButton className="neon-border" closeVariant="black">
             <Offcanvas.Title className="brand-gradient">Menu</Offcanvas.Title>
