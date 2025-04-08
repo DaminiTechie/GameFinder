@@ -1,23 +1,23 @@
 # 🎮 GameFinder
---
+
 
 
 GameFinder is a modern web application designed to help users discover and track their favorite video games. Built with React and integrated with the RAWG API, it offers a seamless and interactive experience for gamers.
 
---
+---
 
 
-🌐 Live Application
+# 🌐 Live Application
 
 
 
 Check out the live version of GameFinder: https://game-finder-rsq6.vercel.app/
 
---
+---
 
 
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 - **Frontend: React, React Router, React Bootstrap, Framer Motion
 - **API Integration: RAWG Video Games Database API
 - **Authentication: Clerk for user management
