@@ -85,10 +85,16 @@ GameFinder/
 
 
 
-#  👤 Author
-Made with ❤️ by Damini
 
-📧 Email: [shekhawatdamini10@gmail.com](mailto:shekhawatdamini10@gmail.com)
+
+
+
+## 👤 Author
+
+- **Name**: Damini Shekhawat  
+- 📧 Email: [shekhawatdamini10@gmail.com](mailto:shekhawatdamini10@gmail.com)  
+
+
  
 
 
