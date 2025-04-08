@@ -81,12 +81,15 @@ GameFinder/
 ├── README.md
 └── vite.config.js
 
+---
 
 
-👤 Author
+
+#  👤 Author
 Made with ❤️ by Damini
 
-📧 Email: [shekhawatdamini10@example.com](mailto:shekhawatdamini10@gmail.com)  
+📧 Email: [shekhawatdamini10@gmail.com](mailto:shekhawatdamini10@gmail.com)
+ 
 
 
 
