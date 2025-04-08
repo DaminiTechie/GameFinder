@@ -1,4 +1,5 @@
-🎮 GameFinder
+# 🎮 GameFinder
+--
 
 
 GameFinder is a modern web application designed to help users discover and track their favorite video games. Built with React and integrated with the RAWG API, it offers a seamless and interactive experience for gamers.
@@ -41,37 +42,45 @@ Check out the live version of GameFinder: https://game-finder-rsq6.vercel.app/
    cd GameFinder
 
 2.  Install Dependencies:
+    ```bash
     npm install
 
 3. Setup Environment Variables:
 
    Create a .env file in the root:
 
+   ```bash
+
    VITE_RAWG_API_KEY=your_rawg_api_key
    VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
 
 4. Start the development server:
+  
+   ```bash
+
     npm run dev
 
 
-- **⚙️ Project Structure
+## ⚙️ Project Structure
 
-   GameFinder/
+```plaintext
+GameFinder/
 ├── node_modules/
 ├── public/
 │   └── index.html
 ├── src/
-│   ├── assets/         # Images, icons, etc.
-│   ├── components/     # Navbar, Search, GameCard, etc.
-│   ├── pages/          # Home, GameDetail, etc.
+│   ├── assets/           # Images, icons, etc.
+│   ├── components/       # Navbar, Search, GameCard, etc.
+│   ├── pages/            # Home, GameDetail, etc.
 │   ├── App.jsx
 │   └── main.jsx
-├── .env                # Environment variables (API keys)
+├── .env                  # Environment variables (API keys)
 ├── .gitignore
 ├── index.html
 ├── package.json
 ├── README.md
 └── vite.config.js
+
 
 
 👤 Author
