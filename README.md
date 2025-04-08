@@ -1,69 +1,86 @@
-# 🎮 Game Library App
-
-A responsive web application for discovering and exploring video games using the RAWG API.
-
-🚀 **Live Demo**:https://game-finder-rsq6.vercel.app/
-
-## 🚀 Features
-
-### Game Discovery
-- 🖼️ Interactive game cards with cover images
-- 📝 Game details (title, release date, rating)
-- 🏷️ Genres and tags display
-
-### Filtering System
-- 🔍 Filter by category/genre
-- 📅 Filter by release year
-- ⭐ Sort by popularity/rating
-
-### Technical Features
-- 🌐 Responsive design (mobile & desktop)
-- ⚡ Fast API data fetching
-- 🎨 Clean UI with Bootstrap styling
-- 🔒 API key security
-
-## 🛠️ Installation
-
-### Prerequisites
-
-- RAWG API key 
-
-### Setup Steps
-1. Clone repository:
-   ```bash
-   git clone https://github.com/DaminiTechie/GameFinder.git
-   cd GameFinder
+🎮 GameFinder
+GameFinder is a modern web application designed to help users discover and track their favorite video games. Built with React and integrated with the RAWG API, it offers a seamless and interactive experience for gamers.
 
 
-2.  Install dependencies:
-    npm install
+🌐 Live Application
+Check out the live version of GameFinder: https://game-finder-rsq6.vercel.app/
 
-3. Create .env file:
-    VITE_RAWG_API_KEY=dbb047ced4114becacf6ba4e979d120c
-
-
-4. Start development server:
-    npm run dev 
-
-5. Open in browser:
-    http://localhost:5173/
+🛠️ Tech Stack
+Frontend: React, React Router, React Bootstrap, Framer Motion
 
 
+API Integration: RAWG Video Games Database API
 
-⚙️ Tech Stack
-    Component	Technology
-    Frontend	React
-    Styling	    Bootstrap
-    API	        RAWG
-    Build Tool	Vite
-    State Management	Context API
+Authentication: Clerk for user management
+
+State Management: React Hooks
+
+⚙️ Features
+🔍 Game Search: Search for games using the RAWG API.
+
+📋 Game Details: View detailed information about each game, including release date, genres, and ratings.
+
+🧾 User Authentication: Sign up and log in using Clerk authentication.
+
+📚 Personal Library: Add games to your personal library for easy tracking.
+
+🎨 Responsive Design: Optimized for both desktop and mobile devices.
+
+🌟 Animated Interface: Smooth animations using Framer Motion for an enhanced user experience.
 
 
-❗ Known Issues
-    Some games show "No description available" (API data limitation)
+📡 API Usage
+We're using RAWG.io to fetch game data. Sign up and get a free API key.
 
-     API rate limits may affect performance during heavy use
+🛠️ Local Development Setup
+1.  Clone the Repository
 
-    Mobile filters need optimization for small screens
+git clone https://github.com/yourusername/gamefinder.git
+cd gamefinder
 
+2.  Install Dependencies
+   npm install
+
+3. Setup Environment Variables
+
+   Create a .env file in the root:
+
+   VITE_RAWG_API_KEY=your_rawg_api_key
+  VITE_CLERK_PUBLISHABLE_KEY=your_clerk_key
+
+4. Run the App
+    npm run dev
+
+
+⚙️ Project Structure
+
+   GameFinder/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/         # Images, icons, etc.
+│   ├── components/     # Navbar, Search, GameCard, etc.
+│   ├── pages/          # Home, GameDetail, etc.
+│   ├── App.jsx
+│   └── main.jsx
+├── .env                # Environment variables (API keys)
+├── .gitignore
+├── index.html
+├── package.json
+├── README.md
+└── vite.config.js
+
+
+👤 Author
+Made with ❤️ by Damini
+
+📧 Email: your-email@example.com
+
+🐙 GitHub: @your-github
+
+💼 Portfolio: (Optional)
+
+
+    
 
