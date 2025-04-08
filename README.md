@@ -82,16 +82,10 @@ GameFinder/
 └── vite.config.js
 
 
-
-
 ---
 
+## 👤 Author
 
-
-
-
-
-#  👤 Author
 
 - **Name**: Damini Shekhawat  
 - 📧 Email: [shekhawatdamini10@gmail.com](mailto:shekhawatdamini10@gmail.com)  
