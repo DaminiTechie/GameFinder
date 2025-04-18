@@ -32,6 +32,7 @@ Check out the live version of GameFinder: https://game-finder-rsq6.vercel.app/
 - 🎨 **Animations** – Framer Motion for dynamic user interactions  
 - 🔐 **User Login/Signup** – With Clerk authentication
 
+---
 
 
 ## 🛠️ Setup Instructions
@@ -60,6 +61,9 @@ Check out the live version of GameFinder: https://game-finder-rsq6.vercel.app/
 
     npm run dev
 
+---
+ 
+
 
 ## ⚙️ Project Structure
 
@@ -81,7 +85,7 @@ GameFinder/
 ├── README.md
 └── vite.config.js
 
-
+---
 
 
 # 🙌 Author
@@ -89,7 +93,7 @@ GameFinder/
 
 Built with ❤️ by **Damini Shekhawat**  
 
-
+---
 
 
  
